@@ -1,0 +1,31 @@
+Asunto,Remitente,Destinatario,Mensaje
+Reunión de equipo,juan@example.com,maria@example.com,"Hola María, ¿podemos reunirnos mañana para discutir el proyecto?"
+Confirmación de reserva,reservas@hotel.com,cliente@example.com,"Estimado cliente, su reserva para el 15 de marzo ha sido confirmada."
+Solicitud de información,info@empresa.com,ventas@empresa.com,"Hola, ¿podrían proporcionarme más información sobre sus productos?"
+Oferta de empleo,rrhh@empresa.com,candidato@example.com,"Estimado candidato, estamos interesados en su perfil para un puesto en nuestra empresa."
+Invitación a evento,evento@organizacion.com,asistente@example.com,"Hola, te invitamos cordialmente a nuestro evento de lanzamiento."
+Aviso de pago pendiente,facturacion@empresa.com,cliente@example.com,Le recordamos que tiene un pago pendiente por la factura número 12345.
+Confirmación de suscripción,newsletter@empresa.com,usuario@example.com,Gracias por suscribirte a nuestro boletín de noticias.
+Recordatorio de reunión,organizador@empresa.com,participante@example.com,Este es un recordatorio para la reunión programada para mañana.
+Respuesta a consulta,soporte@empresa.com,usuario@example.com,Hemos recibido su consulta y nos pondremos en contacto con usted lo antes posible.
+Feliz cumpleaños,equipo@empresa.com,empleado@example.com,¡Feliz cumpleaños! Esperamos que tengas un día maravilloso.
+Recordatorio de cita médica,clinica@example.com,paciente@example.com,"Estimado paciente, le recordamos su cita médica para el próximo lunes a las 10:00 AM."
+Confirmación de compra,ventas@tienda.com,cliente@example.com,Gracias por tu compra. Tu pedido ha sido confirmado y será enviado pronto.
+Notificación de entrega,logistica@empresa.com,cliente@example.com,"Su paquete ha sido entregado. Por favor, confirme la recepción."
+Respuesta a solicitud de soporte,soporte@empresa.com,usuario@example.com,Hemos recibido su solicitud de soporte y estamos trabajando en resolver su problema.
+Invitación a participar en encuesta,encuestas@empresa.com,usuario@example.com,"Hola, nos gustaría conocer tu opinión. ¿Podrías participar en nuestra encuesta rápida?"
+Aviso de renovación de membresía,membresias@club.com,socio@example.com,Su membresía está a punto de vencer. Renueve ahora para seguir disfrutando de los beneficios.
+Confirmación de reserva de vuelo,reservas@aerolinea.com,pasajero@example.com,Su reserva de vuelo ha sido confirmada. Adjunto encontrará los detalles de su itinerario.
+Notificación de cambio de contraseña,seguridad@empresa.com,usuario@example.com,"Se ha cambiado su contraseña. Si no fue usted, por favor contáctenos de inmediato."
+Aviso de suspensión de servicio,servicio@empresa.com,cliente@example.com,Le informamos que su servicio será suspendido temporalmente por mantenimiento programado.
+Confirmación de inscripción,inscripciones@evento.com,participante@example.com,¡Felicidades! Su inscripción para el evento ha sido confirmada.
+Solicitud de cotización,cotizaciones@empresa.com,proveedor@example.com,"Estimado proveedor, por favor envíe una cotización para los productos solicitados."
+Confirmación de suscripción al boletín,boletin@empresa.com,usuario@example.com,Gracias por suscribirte a nuestro boletín informativo. Esperamos que disfrutes de nuestras noticias y ofertas.
+Recordatorio de pago de factura,facturacion@empresa.com,cliente@example.com,"Le recordamos que su factura vence hoy. Por favor, realice el pago antes de la fecha de vencimiento."
+Invitación a evento de networking,networking@empresa.com,participante@example.com,Te invitamos a nuestro evento de networking donde podrás conocer a otros profesionales y expandir tu red de contactos.
+Aviso de actualización de términos de servicio,legal@empresa.com,usuario@example.com,"Hemos actualizado nuestros términos de servicio. Por favor, revisa los cambios y acepta para continuar utilizando nuestros servicios."
+Confirmación de reserva de sala de reuniones,reservas@empresa.com,empleado@example.com,Su reserva de sala de reuniones para mañana ha sido confirmada.
+Aviso de entrega retrasada,logistica@empresa.com,cliente@example.com,Lamentamos informarle que su entrega se retrasará debido a problemas logísticos. Estamos trabajando para resolverlo lo antes posible.
+Invitación a participar en encuesta de satisfacción,encuestas@empresa.com,usuario@example.com,"¡Queremos escuchar tu opinión! Por favor, participa en nuestra encuesta de satisfacción para mejorar nuestros servicios."
+Aviso de cambio de horario,horarios@empresa.com,empleado@example.com,"Le informamos que a partir del próximo mes, el horario de trabajo se modificará. Por favor, revise el nuevo horario adjunto."
+Solicitud de información sobre empleo,empleo@empresa.com,reclutamiento@example.com,"Estimado equipo de reclutamiento, estoy interesado en conocer las oportunidades de empleo disponibles en su empresa."
