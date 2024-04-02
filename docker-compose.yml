@@ -17,7 +17,6 @@ services:
         environment:
             - DEBUG=1
             - HUGGINGFACE_ACCESS_TOKEN=${HUGGINGFACE_ACCESS_TOKEN}
-
 volumes:
     dev-db-data:
     dev-static-data:
