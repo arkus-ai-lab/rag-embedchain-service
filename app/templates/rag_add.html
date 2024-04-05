@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a new file to RAG</title>
+    {% load bootstrap3 %}
+    {% bootstrap_css %}
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .file-upload-wrapper {
+            border-style: dashed;
+            border-color: #6c757d;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            display:block;
+        }
+        .file-upload-wrapper input[type="file"] {
+            font-size: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .file-upload-info {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .file-upload-info small {
+            font-size: 12px;
+            color: #999;
+        }
+        .upload-button {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .file-details {
+            margin-top: 20px;
+        }
+        .success-message {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+            color: #155724;
+            border-radius: 5px;
+        }
+        .error-message {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+            color: #721c24;
+            border-radius: 5px;
+        }
+        .loading-message {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffc107;
+            border-color: #ffc107;
+            color: #212529;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Add a new file to RAG</h1>
+            {% if loading_message %}
+                <div class="loading-message">{{ loading_message }}</div>
+            {% endif %}
+            {% if success_message %}
+                <div class="success-message">{{ success_message }}</div>
+            {% endif %}
+            {% if error %}
+                <div class="error-message">{{ error }}</div>
+            {% endif %}
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="fileInput" class="form-label">Choose file:</label>
+                    <div class="input-group">
+                        <input type="file" id="fileInput" name="file" class="form-control" required accept=".pdf,.csv,.docx,.json">
+                        <small class="form-text text-muted">Only PDF, CSV, DOCX, and JSON files are allowed. Max. 10MB</small>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary upload-button">Upload</button>
+            </form>            
+
+            {% if file %}
+                <div class="file-details">
+                    <h2>File uploaded</h2>
+                    <p><strong>Name:</strong> {{ file.name }}</p>
+                    <p><strong>Size:</strong> {{ file.size }} bytes</p>
+                </div>
+            {% endif %}
+
+        </div>
+    </div>
+</body>
+</html>
