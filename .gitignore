@@ -126,3 +126,5 @@ dmypy.json
 
 # DB
 *.sqlite3
+*.bin
+*.bin

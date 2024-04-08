@@ -63,6 +63,13 @@ RUN mkdir -p /app/utilities && \
 RUN mkdir -p /app/db && \
     chown -R django-user:django-user /app/db
 
+RUN /py/bin/pip install django-bootstrap3 && \
+    /py/bin/pip install docx2txt && \
+    /py/bin/pip install flask && \
+    /py/bin/pip install pillow && \
+    /py/bin/pip install pypdf && \
+    /py/bin/pip install --upgrade 'embedchain[json]'
+
 RUN mkdir -p /home/django-user/.wdm && \
     chown -R django-user:django-user /home/django-user/.wdm
 
