@@ -76,6 +76,7 @@ class RAGAddFileView(TemplateView):
                     if not data_type:
                         raise ValueError('Unsupported file type')
                     RAGHandler(MODEL_RAG).add_rag_source(uploaded_file_url, data_type)
+
                     success_message = "File uploaded successfully!"
                     file_system.delete(file_path)
                     return render(request, 'rag_add.html', {'success_message': success_message})
