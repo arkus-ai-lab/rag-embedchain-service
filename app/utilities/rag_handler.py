@@ -3,7 +3,7 @@ import logging
 import warnings
 from utilities.config import HUGGINGFACE_ACCESS_TOKEN
 from embedchain import App
-
+import re
 
 os.environ["HUGGINGFACE_ACCESS_TOKEN"] = HUGGINGFACE_ACCESS_TOKEN
 
@@ -27,13 +27,21 @@ class RAGHandler:
             with warnings.catch_warnings():
                 warnings.filterwarnings("ignore", category=FutureWarning)
                 response = self.rag_app.query(question)
-                return response
+                pattern = r'Answer:(.*)'
+                match = re.search(pattern, response, re.DOTALL)
+                if match:
+                    extracted_text = match.group(1).strip()
+                    logging.info("Extracted text: ", extracted_text)
+                return extracted_text
         except Exception as e:
             logging.exception("Unexpected error occurred when checking unseen emails.")
             return ({"detail": " An unexpected error occurred, " + str(e)}) 
         
-    def add_source(self, path: str):
+    def add_rag_source(self, path: str, data_type):
         """Add source to RAG model."""
-        self.rag_app.add(path)
+        if data_type == "json":
+            self.rag_app.add(path)
+        else:
+            self.rag_app.add(path, data_type)
 
         return {"detail": "Source added successfully."} 
