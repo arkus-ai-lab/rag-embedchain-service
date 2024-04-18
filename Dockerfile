@@ -35,6 +35,8 @@ RUN mkdir -p /home/django-user/.embedchain && \
 RUN mkdir -p /var/run/postgresql && \
     chown -R django-user:django-user /var/run/postgresql
 
+RUN  /py/bin/pip install pip install -U djangorestframework
+
 RUN mkdir -p /app/utilities && \
     chown -R django-user:django-user /app/utilities
 
@@ -46,7 +48,9 @@ RUN /py/bin/pip install django-bootstrap3 && \
     /py/bin/pip install flask && \
     /py/bin/pip install pillow && \
     /py/bin/pip install pypdf && \
-    /py/bin/pip install --upgrade 'embedchain[json]'
+    /py/bin/pip install --upgrade 'embedchain[json]' && \
+    /py/bin/pip install -U drf-spectacular
+
 
 RUN mkdir -p /home/django-user/.wdm && \
     chown -R django-user:django-user /home/django-user/.wdm
